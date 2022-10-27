@@ -6,9 +6,7 @@
 
 def is_subsequence(word_a, word_b):
     """Returns True if word_a is subsequent of word_b. Returns false if otherwise."""
-    if word_a == word_b:
-        return True
-    elif not word_a:
+    if word_a == word_b or not word_a:
         return True
     elif not word_b:
         return False
@@ -16,3 +14,5 @@ def is_subsequence(word_a, word_b):
         return is_subsequence(word_a[1:], word_b[1:])
     else:
         return is_subsequence(word_a, word_b[1:])
+
+

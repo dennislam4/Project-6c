@@ -1,7 +1,7 @@
 # Author: Dennis Lam
 # GitHub username: dennislam4
 # Date: 10-26-2022
-# Description: Recursice function that takes two string parameters and returns True if the first string is subsequent of
+# Description: Recursive function that takes two string parameters and returns True if the first string is subsequent of
 # the second string, otherwise returns False.
 
 def is_subsequence(word_a, word_b):
@@ -16,4 +16,3 @@ def is_subsequence(word_a, word_b):
         return is_subsequence(word_a[1:], word_b[1:])
     else:
         return is_subsequence(word_a, word_b[1:])
-    
